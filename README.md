@@ -1,4 +1,4 @@
-# jim-mining
+# jim-mining Updated!
 FiveM Custom QBCORE mining script by me from scratch
 
 - Highly customisable via config.lua
