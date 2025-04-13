@@ -46,27 +46,12 @@ FiveM Custom QBCORE mining script by me from scratch
 - qb-menu - for the menus
 - qb-target - for the third eye selection
 
-# How to install
-## Minimal
-If you want to use your own items or repurpose this script:
-- Place in your resources folder
-- add the following code to your server.cfg/resources.cfg below `[qb]`
-```
-ensure jim-mining
-```
-If you want to use my items then:
-
-- Add the images to your inventory folder
-
-- Put these lines in your items.lua
-
-```lua
 P.S mining shops are disabled due to it not working in newer qbcore versions use the below snippits in your qb-shops
 
 Place the following into your qb-shops for your shops config.lua.
 
 Place the below snippit in your "Products" section
-
+```
 ['mining'] = {
         { name = 'pickaxe',           price = 100,  amount = 50 },
         { name = 'miningdrill',       price = 500,  amount = 50 },
@@ -77,9 +62,9 @@ Place the below snippit in your "Products" section
         { name = 'water_bottle',      price = 20,   amount = 50 },
         { name = 'bandage',           price = 10,   amount = 200 },
     },
-
+```
 Place this under your shop locations:
-
+```
  --mining store
      ['mining'] = {
         ['label'] = 'Mining Store',
@@ -126,6 +111,22 @@ Place this under your shop locations:
         ['blipcolor'] = 17,
         ['delivery'] = vector4(-438.25, 6146.9, 31.48, 136.99)
     },
+```
+# How to install
+## Minimal
+If you want to use your own items or repurpose this script:
+- Place in your resources folder
+- add the following code to your server.cfg/resources.cfg below `[qb]`
+```
+ensure jim-mining
+```
+If you want to use my items then:
+
+- Add the images to your inventory folder
+
+- Put these lines in your items.lua
+
+```lua
 
 	-- jim-mining stuff
 ["stone"] 		 	 			 = {["name"] = "stone",           				["label"] = "Stone",	 				["weight"] = 2000, 	    ["type"] = "item", 		["image"] = "stone.png", 				["unique"] = false, 	["useable"] = false, 	["shouldClose"] = false, ["combinable"] = nil,   ["description"] = "Stone woo"},
